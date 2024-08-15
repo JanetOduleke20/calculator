@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <script>
+        console.log("This is inline Javascript");
+    </script>
+</head>
+<body id="body">
+    <!-- Inline Javascript - script <head> or <body> -->
+
+    <button>Display</button>
+    <div id="display"> Welcome to Javascript</div>
+
+
+    <h1 id="user">Raymond</h1>
+    <p id="username">Oduleke Janet</p>
+    <!-- Event handlers - onclick -->
+    <button onclick="changeName()">Change Name</button>
+
+
+    
+    <script>
+        // alert("Hello world")
+    </script>
+
+        
+<button onclick="changeBulb()">ON</button>
+
+<!-- Attributes and styles -->
+<p style="font-size: 10px;" id="welcome">Welcome to SQI</p>
+<button onclick="changeText()">Change Text</button>
+<button onclick="hideWelcome()">Hide welcome</button>
+<button onclick="showWelcome()">Show welcome</button>
+
+<!-- Task -->
+<div id="text" style="margin-top: 50px; font-size: 20px;">I am closed</div>
+<button id="textButton" onclick="changeButtonText()"> Open</button>
+
+<!-- Bulb Task -->
+<!-- <div>
+    <img src="bulboff.png" alt="" style="width: 60px" id="bulb">
+    <button id="switch" onclick="switchBulb()">ON</button>
+</div> -->
+
+
+<div>
+    <button id="switch" onclick="switchMode()">Dark mode</button>
+</div>
+
+<!-- Parameterized functions - functions that have parameters -->
+ <input type="text" id="userInput">
+ <button onclick="myFunction(document.getElementById('userInput').value)">Click button</button>
+
+
+ <div id="displayNumber">0</div>
+ <button onclick="showNumber(7)">7</button>
+ <button onclick="showNumber(8)">8</button>
+ <button onclick="showNumber(9)">9</button>
+ <button onclick="showNumber(0)">0</button>
+ <button onclick="showNumber('.')">.</button>
+ <button onclick="showNumber('+')">+</button>
+
+ <button onclick="calculate()">=</button>
+
+<script src="index.js"></script>
+</body>
+</html>
